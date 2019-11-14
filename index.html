@@ -23,13 +23,13 @@
         padding: 10px;
         margin: 20px;
         height: 50px;
-        width: 80%;
+        width: 100%;
         background-color: blue;
         color: white;
         align-items: center;
       }
       form {
-        width: 30%;
+        width: 40%;
       }
 
       fieldset {
@@ -38,6 +38,7 @@
         display: flex;
         align-content: center;
         justify-content: center;
+        border: 2px solid blue;
       }
 
       legend {
@@ -49,6 +50,10 @@
       input[type="date"] {
         padding: 10px;
         margin: 10px;
+      }
+      textarea {
+        width: 100%;
+        padding: 5px;
       }
       .button-down {
         display: flex;
@@ -62,6 +67,7 @@
         margin: 35px;
         border: blue 1px solid;
         background-color: #fff;
+        box-shadow: blue 0.1px;
       }
       .button2 {
         border-radius: 10%;
@@ -69,10 +75,12 @@
         margin: 35px;
         background-color: blue;
         color: white;
+        box-shadow: blue;
       }
       select {
-        padding: 3px;
+        padding: 8px;
         margin: 10px;
+        background-color: white;
       }
     </style>
   </head>
@@ -113,10 +121,21 @@
           <fieldset>
             <legend>Project Type</legend>
             <label for="indivisual">Indivisual</label>
-            <input type="radio" name="indivisual" id="" /> <br />
+            <input
+              type="radio"
+              value="indivisual"
+              id="indivisual"
+              name="projectType"
+            />
+            <br />
 
             <label for="template">Template</label>
-            <input type="radio" name="template" id="" />
+            <input
+              type="radio"
+              value="template"
+              id="template"
+              name="projectType"
+            />
           </fieldset>
 
           <fieldset>
@@ -146,11 +165,12 @@
             <option value="4">Government</option>
           </select>
         </fieldset>
-      </form>
+    
     </section>
     <div class="button-down">
       <button class="button1">Cancel</button>
       <button class="button2">Order our Service</button>
     </div>
+</form>
   </body>
 </html>
